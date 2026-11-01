@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>ChatIndex</title>
+    <script>
+      (function () {
+        var path = location.pathname;
+        if (path.indexOf("/ChatIndex/") === 0) {
+          try {
+            sessionStorage.setItem("chatindex:redirect", path + location.search + location.hash);
+          } catch (error) {}
+        }
+        location.replace("/ChatIndex/");
+      })();
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=https://aniglobal.github.io/ChatIndex/" />
+    </noscript>
+    <style>
+      body { font-family: ui-sans-serif, system-ui, "Segoe UI", Arial, sans-serif; background: #f8fafc; color: #0f172a; display: grid; place-items: center; height: 100vh; margin: 0; }
+      main { text-align: center; }
+      a { color: #0f172a; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>ChatIndex</h2>
+      <p>Nếu không chuyển trang, <a href="https://aniglobal.github.io/ChatIndex/">mở ChatIndex tại đây</a>.</p>
+    </main>
+  </body>
+</html>
