@@ -1,0 +1,1 @@
+import{D as e}from"./utils-Ba9q0Lno.js";import{n as t}from"./api-D8xcMRNv.js";async function n(n){if(!(await t(`/api/me`)).ok)throw e(`/sign-in?next=/ChatIndex/dm`);return{ok:!0}}export{n as clientLoader};

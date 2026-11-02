@@ -1,0 +1,1 @@
+import{n as e}from"./api-D8xcMRNv.js";async function t({params:t}){let n=t.username??``,r=await e(`/api/users/${encodeURIComponent(n)}`);return r.ok?{user:(await r.json()).user,notFound:!1}:{user:null,notFound:!0}}export{t as clientLoader};

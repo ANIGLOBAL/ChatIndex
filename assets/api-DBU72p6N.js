@@ -1,1 +1,0 @@
-function e(){let e=window.CHATINDEX_CONFIG;return e?.api&&typeof e.api==`string`?e.api.replace(/\/+$/,``):``}async function t(t,n){return fetch(`${e()}${t}`,{credentials:`include`,...n})}export{t};
