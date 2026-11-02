@@ -1,0 +1,1 @@
+import{D as e}from"./utils-Ba9q0Lno.js";import{n as t}from"./api-D8xcMRNv.js";async function n(n){let r=await t(`/api/me`);if(!r.ok)return e(`/ChatIndex/sign-in`);let i=await r.json();return i.user?.role===`admin`?{denied:!1,username:i.user?.username??``}:{denied:!0,username:i.user?.username??``}}export{n as clientLoader};
