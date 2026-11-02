@@ -1,1 +1,0 @@
-import{D as e}from"./utils-Ba9q0Lno.js";import{t}from"./api-DBU72p6N.js";async function n(n){let r=await t(`/api/me`);if(!r.ok)throw e(`/sign-in?next=/ChatIndex/settings`);let i=await r.json();if(!i.user)throw e(`/sign-in?next=/ChatIndex/settings`);return{user:i.user}}export{n as clientLoader};
